@@ -1,30 +1,30 @@
 <div style="text-align:center; padding-top: 100px;">
 <div style="display: inline-grid; width: 60%;">
 <mat-form-field>
-    <mat-label>First Name</mat-label>
-    <input matInput required>
+    <mat-label for="firstName">First Name</mat-label>
+    <input matInput required id="firstName">
   </mat-form-field>
   <mat-form-field>
-    <mat-label>Last Name</mat-label>
-    <input matInput required>
+    <mat-label for="lastName">Last Name</mat-label>
+    <input matInput required id="lastName">
   </mat-form-field>
   <mat-form-field>
-    <mat-label>E-Mail Address</mat-label>
-    <input matInput required>
+    <mat-label for="emailAddress">E-Mail Address</mat-label>
+    <input matInput required id="emailAddress"> 
   </mat-form-field>
   <mat-form-field>
-    <mat-label>Home Address</mat-label>
-    <input matInput required>
+    <mat-label for="homeAddress">Home Address</mat-label>
+    <input matInput required id="homeAddress">
   </mat-form-field>
   <mat-form-field>
-    <mat-label>Area Needing Work</mat-label>
-    <mat-select required>
+    <mat-label for="areaNeedingWork">Area Needing Work</mat-label>
+    <mat-select required id="areaNeedingWork">
       <mat-option *ngFor="let location of neededWorkArea" [value]="location.area">{{location.area}}</mat-option>
     </mat-select>
   </mat-form-field>
   <mat-form-field >
-    <mat-label>Description of request</mat-label>
-    <textarea matInput style="height: 400px" required></textarea>
+    <mat-label for="descriptionOfRequest">Description of request</mat-label>
+    <textarea matInput style="height: 400px" required id="descriptionOfRequest"></textarea>
   </mat-form-field>
   </div>
 </div>
