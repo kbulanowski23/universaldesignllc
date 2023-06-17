@@ -55,22 +55,7 @@
 </mat-toolbar>
 
 <!-- Image Slider -->
-<!-- <div>  
-  <div class="row">  
-    <div class="col-sm-12 btn btn-primary">  
-      Image Slider  
-    </div>  
-  </div>  
-</div>  
-<hr style="background-color:black" />  
-<div class="row">  
-  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">  
-    <div ngxSlickItem *ngFor="let image of images" class="slide">  
-      <img src="{{ image.img }}" width="100%">  
-    </div>  
-  </ngx-slick-carousel>  
-</div> -->
-
+<div style="padding-top: 100px">
 <ngx-slick-carousel class="carousel" 
   #slickModal="slick-carousel" 
   [config]="slideConfig" 
@@ -83,6 +68,7 @@
 <img src="{{ image.img }}" alt="" width="100%" height="800px">
 </div>
 </ngx-slick-carousel>
+</div>
 <!-- <button (click)="addSlide()">Add</button>
 <button (click)="removeSlide()">Remove</button>
 <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
