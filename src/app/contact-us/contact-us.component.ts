@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ContactUsComponent {
 
+  neededWorkArea = [
+    { area: "Kitchen" },  
+    { area: "Living Room" },  
+    { area: "Bathroom" },
+    { area: "Bedroom" },    
+    { area: "Basement" },  
+    { area: "Roof" },
+    { area: "Front Yard" },
+    { area: "Back Yard" },  
+  ]
 }
