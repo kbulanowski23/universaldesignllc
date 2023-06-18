@@ -17,6 +17,7 @@ import { InteriorComponent } from './interior/interior.component';
 import { KitchenComponent } from './kitchen/kitchen.component';
 import { BathroomComponent } from './bathroom/bathroom.component';
 import { OutdoorComponent } from './outdoor/outdoor.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { OutdoorComponent } from './outdoor/outdoor.component';
     InteriorComponent,
     KitchenComponent,
     BathroomComponent,
-    OutdoorComponent
+    OutdoorComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +45,7 @@ import { OutdoorComponent } from './outdoor/outdoor.component';
       {path: 'contact-us', component: ContactUsComponent},
       {path: 'success-form', component: SuccessFormComponent},
       {path: 'portfolio', component: PortfolioComponent},
+      {path: 'services', component: ServicesComponent},
       {path: 'front-facade', component: FrontFacadeComponent},
       {path: 'interior', component: InteriorComponent},
       {path: 'kitchen', component: KitchenComponent},
