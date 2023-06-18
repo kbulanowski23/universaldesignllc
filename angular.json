@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/universal_design_llc",
+            "outputPath": "dist/universaldesignllc",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
