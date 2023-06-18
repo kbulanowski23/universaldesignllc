@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
     "jquery": "^3.7.0",
+    "ngx-lightbox": "^3.0.0",
     "ngx-slick-carousel": "^15.0.0",
     "ngx-slickjs": "^1.5.2",
     "rxjs": "~7.8.0",

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { LightboxModule } from 'ngx-lightbox';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { SuccessFormComponent } from './success-form/success-form.component';
@@ -23,6 +24,7 @@ import { SuccessFormComponent } from './success-form/success-form.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     SlickCarouselModule,
+    LightboxModule,
     MaterialModule,
     RouterModule.forRoot([
       {path: 'about-us', component: AboutUsComponent},
