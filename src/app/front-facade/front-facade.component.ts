@@ -35,7 +35,7 @@ export class FrontFacadeComponent {
 
   public frontFacade: Array<any> = [];
   constructor(private _lightbox: Lightbox) {
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 22; i++) {
       const src = 'assets/images/FrontFacade/entrance' + i + '.jpeg';
       const caption = 'Image ' + i + ' caption here';
       const thumb = 'assets/images/FrontFacade/entrance' + i + '.jpeg';
