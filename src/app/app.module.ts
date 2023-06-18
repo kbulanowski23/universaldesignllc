@@ -43,7 +43,11 @@ import { OutdoorComponent } from './outdoor/outdoor.component';
       {path: 'contact-us', component: ContactUsComponent},
       {path: 'success-form', component: SuccessFormComponent},
       {path: 'portfolio', component: PortfolioComponent},
-      {path: 'front-facade', component: FrontFacadeComponent}
+      {path: 'front-facade', component: FrontFacadeComponent},
+      {path: 'interior', component: InteriorComponent},
+      {path: 'kitchen', component: KitchenComponent},
+      {path: 'bathroom', component: BathroomComponent},
+      {path: 'outdoor', component: OutdoorComponent},
     ]),
   ],
   providers: [],
