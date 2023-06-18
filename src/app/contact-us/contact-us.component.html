@@ -1,9 +1,10 @@
 <form action="https://formsubmit.co/4279ed21f5db7fdfcd843445c11d4990" method="POST">
+<input type="hidden" name="_next" value="http://localhost:4200/success-form">
 <!-- Honey -->
 <input type="text" name="_honey" style="display:none">
 <!-- Captcha Disabled -->
 <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="http://localhost:4200/success-form">
+
 <!-- Contact us form -->
 <div style="text-align:center; padding-top: 100px;">
 <div style="display: inline-grid; width: 60%;">
@@ -30,8 +31,11 @@
   <mat-form-field>
     <mat-label for="areaNeedingWork">Area Needing Work</mat-label>
     <mat-select required id="areaNeedingWork">
-      <mat-option *ngFor="let location of neededWorkArea" [value]="location.area" name="Area&nbsp;Needing&nbsp;Work">{{location.area}}</mat-option>
+      <mat-option *ngFor="let location of neededWorkArea" [value]="location.area">{{location.area}}
+      </mat-option>
     </mat-select>
+    <!-- <input matInput [value]="location.area" name="Area&nbsp;Needing&nbsp;Work"> -->
+    
   </mat-form-field>
   <mat-form-field >
     <mat-label for="descriptionOfRequest">Description of request</mat-label>
