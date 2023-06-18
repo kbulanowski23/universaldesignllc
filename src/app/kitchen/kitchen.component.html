@@ -1,1 +1,6 @@
-<p>kitchen works!</p>
+<div class="container" style="padding-top: 2%; margin: 2em; justify-content: center"> 
+    <div *ngFor="let image of kitchen; let i=index">
+        <img [src]="image.thumb" (click)="open(i)" />
+    </div>
+    </div>
+    
