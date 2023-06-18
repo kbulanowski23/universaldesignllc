@@ -5,7 +5,7 @@
         <mat-icon>phone book</mat-icon>
       </button>
       <span style="font-size: 15px;">Phone: (215)-990-7339 </span>
-      <span style="margin-left: 20px; margin-right: 20px; font-size: 15px;"> | </span>
+      <span style="margin-left: 2%; margin-right: 2%; font-size: 15px;"> | </span>
       <a href="mailto:universaldesignllc@gmail.com" style="color: white;">
       <button mat-icon-button aria-label="Example icon-button with heart icon">
         <mat-icon>email</mat-icon>
@@ -58,9 +58,9 @@
     </mat-nav-list>
   </mat-toolbar-row>
 </mat-toolbar>
-
+<hr />
 <!-- Image Slider -->
-<div *ngIf="isHomeRoute()" style="padding-top: 100px">
+<div *ngIf="isHomeRoute()" style="padding-top: 2%;">
 <ngx-slick-carousel class="carousel" 
   #slickModal="slick-carousel" 
   [config]="slideConfig" 
@@ -68,9 +68,8 @@
   (breakpoint)="breakpoint($event)"
   (afterChange)="afterChange($event)"
   (beforeChange)="beforeChange($event)">
-<div ngxSlickItem *ngFor="let image of images" class="slide">
-<!-- <img src="{{ image.img }}" alt="" width="70%" height="800px"> -->
-<img src="{{ image.img }}" alt="" width="100%" height="800px">
+<div ngxSlickItem *ngFor="let image of images" class="slide" >
+<img src="{{ image.img }}" alt="" width="100%" height="500px">
 </div>
 </ngx-slick-carousel>
 </div>
@@ -79,8 +78,14 @@
 <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
 <button (click)="slickModal.unslick()">unslick</button> -->
    
-  <div style="position: fixed; text-align: center; bottom: 15px; width: 100%;">
+  <!-- <div style="position: fixed; text-align: center; bottom: 1%; width: 100%;">
   Copyright © 2023 Universal Design LLC
-  </div>
+  </div> -->
+
+  
+  
 
 <router-outlet></router-outlet>
+<div style="bottom: 0; text-align: center; margin-top: 2%;">
+  <p>Copyright © 2023 Universal Design LLC</p>
+</div>

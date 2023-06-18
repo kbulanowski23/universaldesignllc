@@ -44,21 +44,16 @@ export class AppComponent implements OnInit {
     autoplaySpeed: 4000
   };
   addSlide() {
-    // this.slides.push({ img: 'http://placehold.it/350x150/777777' });
   }
   removeSlide() {
     this.images.length = this.images.length - 1;
   }
   slickInit(e: any) {
-    console.log('slick initialized');
   }
   breakpoint(e: any) {
-    console.log('breakpoint');
   }
   afterChange(e: any) {
-    console.log('afterChange');
   }
   beforeChange(e: any) {
-    console.log('beforeChange');
   }
 }
