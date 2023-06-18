@@ -10,33 +10,35 @@
 <div style="display: inline-grid; width: 60%;">
 <mat-form-field>
     <mat-label for="firstName">First Name</mat-label>
-    <input matInput required id="firstName" name="First&nbsp;Name">
+    <input type="text" matInput required id="firstName" name="First&nbsp;Name">
   </mat-form-field>
   <mat-form-field>
     <mat-label for="lastName">Last Name</mat-label>
-    <input matInput required id="lastName" name="Last&nbsp;Name">
+    <input type="text" matInput required id="lastName" name="Last&nbsp;Name">
   </mat-form-field>
   <mat-form-field>
     <mat-label for="emailAddress">E-Mail Address</mat-label>
-    <input matInput required id="emailAddress" name="Email&nbsp;Address"> 
+    <input type="email" matInput required id="emailAddress" name="Email&nbsp;Address"> 
   </mat-form-field>
   <mat-form-field>
     <mat-label for="phoneNumber">Phone Number</mat-label>
-    <input matInput required id="phoneNumber" name="Phone&nbsp;Number">  
+    <input type="number" matInput required id="phoneNumber" name="Phone&nbsp;Number">  
   </mat-form-field>
   <mat-form-field>
     <mat-label for="homeAddress">Home Address</mat-label>
     <input matInput required id="homeAddress" name="Home&nbsp;Address">
   </mat-form-field>
-  <mat-form-field>
+  <!-- Input doesnt work here so no point of having the drop down -->
+  <!-- <mat-form-field>
     <mat-label for="areaNeedingWork">Area Needing Work</mat-label>
     <mat-select required id="areaNeedingWork">
-      <mat-option *ngFor="let location of neededWorkArea" [value]="location.area">{{location.area}}
+      <mat-option *ngFor="let location of neededWorkArea"  [value]="location.area">
+        {{location.area}}
       </mat-option>
     </mat-select>
-    <!-- <input matInput [value]="location.area" name="Area&nbsp;Needing&nbsp;Work"> -->
     
-  </mat-form-field>
+    <input type="hidden" name="Area&nbsp;Needing&nbsp;Work">
+  </mat-form-field> -->
   <mat-form-field >
     <mat-label for="descriptionOfRequest">Description of request</mat-label>
     <textarea matInput style="height: 400px" required id="descriptionOfRequest" name="Description&nbsp;of&nbsp;request"></textarea>
