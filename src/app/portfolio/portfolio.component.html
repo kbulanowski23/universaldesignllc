@@ -1,0 +1,28 @@
+<div style="padding-top: 2%;">
+    <!-- <mat-grid-list style="margin-left: 2%; margin-right: 2%" cols="2" rowHeight="2:1">
+        <mat-grid-tile class="patternForTiles">1</mat-grid-tile>
+        <mat-grid-tile class="patternForTiles">2</mat-grid-tile>
+        <mat-grid-tile class="patternForTiles">3</mat-grid-tile>
+        <mat-grid-tile class="patternForTiles">4</mat-grid-tile>
+      </mat-grid-list> -->
+
+      <mat-grid-list cols="2" style="margin-left: 2%; margin-right: 2%" rowHeight="2:1" gutterSize="1%" (window:resize)="handleSize($event)">
+        <a routerLink="/front-facade">
+        <mat-grid-tile class="patternForTiles">
+            <div style=" font-size: 100px; font-size: 3.5vw; color: white;">Front Facade</div>
+        </mat-grid-tile>
+        </a>
+        <mat-grid-tile class="patternForTiles"> 
+            <div style=" font-size: 100px; font-size: 3.5vw; color: white;">Interior</div>
+        </mat-grid-tile>
+        <mat-grid-tile class="patternForTiles">
+            <div style=" font-size: 100px; font-size: 3.5vw; color: white;">Kitchen</div>
+        </mat-grid-tile>
+        <mat-grid-tile class="patternForTiles">
+            <div style=" font-size: 100px; font-size: 3.5vw; color: white;">Bathroom</div>
+        </mat-grid-tile>
+        <mat-grid-tile class="patternForTiles">
+            <div style=" font-size: 100px; font-size: 3.5vw; color: white;">Outdoor</div>
+        </mat-grid-tile>
+        </mat-grid-list>
+</div>
