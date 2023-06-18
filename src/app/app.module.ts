@@ -9,12 +9,14 @@ import { MaterialModule } from './material/material.module';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { SuccessFormComponent } from './success-form/success-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    SuccessFormComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     RouterModule.forRoot([
       {path: 'about-us', component: AboutUsComponent},
       {path: 'contact-us', component: ContactUsComponent},
+      {path: 'success-form', component: SuccessFormComponent}
     ]),
   ],
   providers: [],
