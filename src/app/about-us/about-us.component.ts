@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AboutUsComponent {
 
-  image =  "../assets/images/universaldesignlogo.jpeg";  
+  image =  'assets/images/HomePageSlider/homepage7.jpeg';  
 
 }

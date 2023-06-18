@@ -16,14 +16,13 @@ export class AppComponent implements OnInit {
   }
   
   title = 'Universal Design LLC';
-
   images = [  
-    { img: "../assets/images/1.jpeg" },  
-    { img: "../assets/images/2.jpeg" },  
-    { img: "../assets/images/3.jpeg" },  
-    { img: "../assets/images/4.jpeg" },  
-    { img: "../assets/images/5.jpeg" },  
-    { img: "../assets/images/6.jpeg" },  
+    { img: 'assets/images/HomePageSlider/homepage1.jpeg' },  
+    { img: 'assets/images/HomePageSlider/homepage2.jpeg' },  
+    { img: 'assets/images/HomePageSlider/homepage3.jpeg' },  
+    { img: 'assets/images/HomePageSlider/homepage4.jpeg' },  
+    { img: 'assets/images/HomePageSlider/homepage5.jpeg' },  
+    { img: 'assets/images/HomePageSlider/homepage6.jpeg' },  
   ];  
   
   // slickConfig: Slick.Config = {
